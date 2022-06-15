@@ -20,8 +20,8 @@ obj: "string"
 |:----------------:|:---------:|:----------------:|:----------------:|
 | login | string | Логин пользователя для авторизации | + |
 | password | string | Пароль пользователя для авторизации | + |
-| id_api | 0 | ? | + |
-| api_hash | string | ? | + |
+| id_api | 0 | данные с mytelegram.org | + |
+| api_hash | string | данные с mytelegram.org | + |
 
 ## telegram_preauth
 проверка на наличие файла сессии
