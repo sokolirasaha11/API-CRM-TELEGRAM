@@ -11,7 +11,7 @@ http://51.250.11.212:7002/api/{ССЫЛКА ЗАПРОСА}
 //обязательные
   "login": "string",
   "password": "string",
-  "id_api": 0,
+  "id_api": int,
   "api_hash": "string"
 //получаем
   obj: "string"
@@ -44,8 +44,8 @@ http://51.250.11.212:7002/api/{ССЫЛКА ЗАПРОСА}
 проверка на наличие файла сессии
 ```
 //обязательные
-  code: “int”,
-  flag: ‘bool’
+  code: int,
+  flag: bool
 ```
 | props | type | description | obligatory
 |:----------------:|:---------:|:----------------:|:----------------:|
