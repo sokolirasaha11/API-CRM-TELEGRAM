@@ -38,10 +38,10 @@ obj: "string"
 |:----------------:|:---------:|:----------------:|:----------------:|
 | phone | string | Телефон пользователя в телеграм | + |
 | code | string | Код авторизации из телеграм | + |
-| flag | true | ? | + |
-| user_id | 0 | ? | + |
-| answer | string | ? | + |
-| password | string | ? | + |
+| flag | true | Контроль вызываемой функции | + |
+| user_id | 0 | ID для телеграма | + |
+| answer | string | НЕАКТУАЛЬНО | - |
+| password | string | Пароль для авторизации в телеграме | + |
 
 
 ## telegram_auth 
@@ -99,5 +99,5 @@ obj: "string"
 ```
 | props | type | description | obligatory
 |:----------------:|:---------:|:----------------:|:----------------:|
-| id_account | 0 | ? | + |
-| messenger | string | ? | + |
+| id_account | 0 | id аккаунта в бд | + |
+| messenger | string | мессенджр из бд | + |
