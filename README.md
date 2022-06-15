@@ -13,7 +13,15 @@ http://51.250.11.212:7002/api/{ССЫЛКА ЗАПРОСА}
   "password": "string",
   "id_api": 0,
   "api_hash": "string"
+//получаем
+obj: "string"
 ```
+| props | type | description | obligatory
+|:----------------:|:---------:|:----------------:|:----------------:|
+| login | string | Логин пользователя для авторизации | + |
+| password | string | Пароль пользователя для авторизации | + |
+| id_api | 0 | ? | + |
+| api_hash | string | ? | + |
 
 ## telegram_preauth
 проверка на наличие файла сессии
@@ -26,6 +34,15 @@ http://51.250.11.212:7002/api/{ССЫЛКА ЗАПРОСА}
   "answer": "string",
   "password": "string"
 ```
+| props | type | description | obligatory
+|:----------------:|:---------:|:----------------:|:----------------:|
+| phone | string | Телефон пользователя в телеграм | + |
+| code | string | Код авторизации из телеграм | + |
+| flag | true | ? | + |
+| user_id | 0 | ? | + |
+| answer | string | ? | + |
+| password | string | ? | + |
+
 
 ## telegram_auth 
 проверка на наличие файла сессии
@@ -34,17 +51,21 @@ http://51.250.11.212:7002/api/{ССЫЛКА ЗАПРОСА}
   code: “int”,
   flag: ‘bool’
 ```
+| props | type | description | obligatory
+|:----------------:|:---------:|:----------------:|:----------------:|
+| code | int | code? | + |
+| flag | bool | ? | + |
 
 ## telegram_load 
 авторизация в телеграмме
 ```
-
+// нету обязательных props / запрос работает с данным которые уже крутятся в системе!
 ```
 
 ## telegram_handler 
 подгрузка пользователь с которыми есть диалог
 ```
-
+// нету обязательных props / запрос работает с данным которые уже крутятся в системе!
 ```
 
 ## telegram_send 
@@ -54,6 +75,10 @@ http://51.250.11.212:7002/api/{ССЫЛКА ЗАПРОСА}
   "id_account": 0,
   "messenger": "string"
 ```
+| props | type | description | obligatory
+|:----------------:|:---------:|:----------------:|:----------------:|
+| id_account | 0 | ? | + |
+| messenger | string | ? | + |
 
 ## load_tgdialog 
 загрузка диалога и добавление в бд
@@ -61,6 +86,9 @@ http://51.250.11.212:7002/api/{ССЫЛКА ЗАПРОСА}
 //обязательные
   id: int
 ```
+| props | type | description | obligatory
+|:----------------:|:---------:|:----------------:|:----------------:|
+| id | int | ? | + |
 
 ## accountid_and_messenger 
 получение диалога
@@ -69,4 +97,7 @@ http://51.250.11.212:7002/api/{ССЫЛКА ЗАПРОСА}
   "id_account": 0,
   "messenger": "string"
 ```
-
+| props | type | description | obligatory
+|:----------------:|:---------:|:----------------:|:----------------:|
+| id_account | 0 | ? | + |
+| messenger | string | ? | + |
