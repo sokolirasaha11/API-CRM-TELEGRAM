@@ -14,7 +14,7 @@ http://51.250.11.212:7002/api/{ССЫЛКА ЗАПРОСА}
   "id_api": 0,
   "api_hash": "string"
 //получаем
-obj: "string"
+  obj: "string"
 ```
 | props | type | description | obligatory
 |:----------------:|:---------:|:----------------:|:----------------:|
