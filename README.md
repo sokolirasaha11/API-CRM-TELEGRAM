@@ -29,18 +29,14 @@ obj: "string"
 //обязательные
   "phone": "string",
   "code": "string",
-  "flag": true,
-  "user_id": 0,
-  "answer": "string",
+  "user_id": int,
   "password": "string"
 ```
 | props | type | description | obligatory
 |:----------------:|:---------:|:----------------:|:----------------:|
 | phone | string | Телефон пользователя в телеграм | + |
 | code | string | Код авторизации из телеграм | + |
-| flag | true | Контроль вызываемой функции | + |
-| user_id | 0 | ID для телеграма | + |
-| answer | string | НЕАКТУАЛЬНО | - |
+| user_id | int | ID из телеграма | + |
 | password | string | Пароль для авторизации в телеграме | + |
 
 
@@ -53,8 +49,8 @@ obj: "string"
 ```
 | props | type | description | obligatory
 |:----------------:|:---------:|:----------------:|:----------------:|
-| code | int | code? | + |
-| flag | bool | ? | + |
+| code | int | Код подтверждения из тг, для входа в свой аккаунт | + |
+| flag | bool | Контроль вызываемой функции | + |
 
 ## telegram_load 
 авторизация в телеграмме
@@ -69,16 +65,19 @@ obj: "string"
 ```
 
 ## telegram_send 
-“ловля” новых сообщений
+отправка новых сообщений
 ```
 //обязательные
-  "id_account": 0,
+  "id_account": int,
+  "answer": "string"
+//необязательные
   "messenger": "string"
 ```
 | props | type | description | obligatory
 |:----------------:|:---------:|:----------------:|:----------------:|
-| id_account | 0 | ? | + |
-| messenger | string | ? | + |
+| id_account | int | ID из телеграма | + |
+| messenger | string | Выбор мессенджера в который доставляется сообщение | - |
+| answer | string | Сообщение  | + |
 
 ## load_tgdialog 
 загрузка диалога и добавление в бд
@@ -88,16 +87,17 @@ obj: "string"
 ```
 | props | type | description | obligatory
 |:----------------:|:---------:|:----------------:|:----------------:|
-| id | int | ? | + |
+| id | int | ID диалога | + |
 
 ## accountid_and_messenger 
 получение диалога
 ```
 //обязательные
-  "id_account": 0,
+  "id_account": int,
+//необязателльные
   "messenger": "string"
 ```
 | props | type | description | obligatory
 |:----------------:|:---------:|:----------------:|:----------------:|
-| id_account | 0 | id аккаунта в бд | + |
-| messenger | string | мессенджр из бд | + |
+| id_account | int | id аккаунта из бд | + |
+| messenger | string | мессенджр из бд | - |
