@@ -7,8 +7,8 @@ http://51.250.11.212:7002/api/{ССЫЛКА ЗАПРОСА}
 Для более быстрого продвижения по этому API, советуем посетить - https://core.telegram.org/
 
 ## account_auth 
-Метод делает запрос к базе данных (далее бд), проверяет наличие пользователя в бд по паролю и логину;
-При отсутствие пользователя добавляет его в бд.
+Метод делает запрос к базе данных (далее БД), проверяет наличие пользователя в БД по паролю и логину;
+При отсутствие пользователя добавляет его в БД.
 ```
 //обязательные
   "login": "string",
@@ -133,8 +133,8 @@ requests.post(f"{host}:{port}/api/load_tgdialog", json={'user_id': user_id}).jso
 ```
 | props | type | description | obligatory
 |:----------------:|:---------:|:----------------:|:----------------:|
-| id_account | int | id аккаунта из бд | + |
-| messenger | string | мессенджр из бд | - |
+| id_account | int | id аккаунта из БД | + |
+| messenger | string | мессенджр из БД | - |
 ```python
 #пример использования
 requests.post(f"{host}:{port}/api/get_messages/accountid_and_messenger", json={"id_account": id_acc,"messenger": "telegram"}).json()
