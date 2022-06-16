@@ -140,6 +140,6 @@ requests.post(f"{host}:{port}/api/load_tgdialog", json={'user_id': user_id}).jso
 requests.post(f"{host}:{port}/api/get_messages/accountid_and_messenger", json={"id_account": id_acc,"messenger": "telegram"}).json()
 ```
 
-#### дополнительные источники -> http://51.250.11.212:7002/docs
+#### Fast API -> http://51.250.11.212:7002/docs
 #### Telegram APIs -> https://core.telegram.org/
 ![Alt-текст](https://c.tenor.com/_V8TTKAXYB0AAAAC/spongebob-squarepants-sunglasses.gif "Орк")
