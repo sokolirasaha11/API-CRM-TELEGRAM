@@ -1,7 +1,7 @@
 # Общая информация
 Здесь описаны внешние и внутренние запросы API CRM 
 ```
-http://51.250.11.212:7002/api/{ССЫЛКА ЗАПРОСА}
+http://{server}/api/{ССЫЛКА ЗАПРОСА}
 ```
 Донаты на лечение принимаются.
 Для более быстрого продвижения по этому API, советуем посетить - https://core.telegram.org/
@@ -161,6 +161,5 @@ requests.post(f"{host}:{port}/api/get_messages/accountid_and_messenger", json={"
 ![Alt-текст](https://github.com/sokolirasaha11/API-CRM-TELEGRAM/blob/main/chema.jpg?raw=true "Орк")
 
 #### Репозиторий с использованием API ( пример ) -> https://github.com/molode4ik/Best-Web-Ever
-#### Fast API -> http://51.250.11.212:7002/docs
 #### Telegram APIs -> https://core.telegram.org/
 ![Alt-текст](https://c.tenor.com/_V8TTKAXYB0AAAAC/spongebob-squarepants-sunglasses.gif "Орк")
